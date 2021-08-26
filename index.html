@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>MATCHROOM | Your Visual Playground</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <!-- START: Styles -->
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,400i,700%7cMarcellus+SC" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+        <!-- FontAwesome -->
+        <script defer src="assets/vendor/fontawesome-free/js/all.js"></script>
+        <script defer src="assets/vendor/fontawesome-free/js/v4-shims.js"></script>
+        <!-- IonIcons -->
+        <link rel="stylesheet" href="assets/vendor/ionicons/css/ionicons.min.css">
+        <!-- Revolution Slider -->
+        <link rel="stylesheet" href="assets/vendor/revolution/css/settings.css">
+        <link rel="stylesheet" href="assets/vendor/revolution/css/layers.css">
+        <link rel="stylesheet" href="assets/vendor/revolution/css/navigation.css">
+        <!-- Flickity -->
+        <link rel="stylesheet" href="assets/vendor/flickity/dist/flickity.min.css">
+        <!-- Photoswipe -->
+        <link rel="stylesheet" href="assets/vendor/photoswipe/dist/photoswipe.css">
+        <link rel="stylesheet" href="assets/vendor/photoswipe/dist/default-skin/default-skin.css">
+        <!-- DateTimePicker -->
+        <link rel="stylesheet" href="assets/vendor/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+        <!-- Summernote -->
+        <link rel="stylesheet" href="assets/vendor/summernote/dist/summernote-bs4.css">
+        <!-- GODLIKE -->
+        <link rel="stylesheet" href="assets/css/godlike.css">
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <!-- END: Styles -->
+        <!-- jQuery -->
+        <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    </head>
+    <!--
+    Additional Classes:
+        .nk-page-boxed
+-->
+    <body>
+        <!-- START: Page Preloader -->
+        <div class="nk-preloader">
+            <!--
+         Preloader animation
+         data-close-... data used for closing preloader
+         data-open-...  data used for opening preloader
+    -->
+            <div class="nk-preloader-bg" style="background-color: #000;" data-close-frames="23" data-close-speed="1.2" data-close-sprites="./assets/images/preloader-bg.png" data-open-frames="23" data-open-speed="1.2" data-open-sprites="./assets/images/preloader-bg-bw.png">
+            </div>
+            <div class="nk-preloader-content">
+                <div>
+                    <img class="nk-img" src="assets/images/logo.svg" alt="MATCHROOM" width="100%">
+                    <div class="nk-preloader-animation"></div>
+                </div>
+            </div>
+            <div class="nk-preloader-skip">Skip</div>
+        </div>
+        <!-- END: Page Preloader -->
+        <!--
+    START: Page Video Background
+
+    Additional Attributes:
+        data-video - Youtube/Vimeo/self-hosted video urls.
+            self-hosted video example:
+            data-video="mp4:./video/local-video.mp4,webm:./video/local-video.webm,ogv:./video/local-video.ogv"
+        data-video-loop - loop video (true/false)
+        data-video-mute - mute video music (true/false)
+        data-video-volume - volume of video music (0-100)
+        data-video-start-time - video start time in seconds
+        data-video-end-time - video end time in seconds
+        data-video-pause-on-page-leave - pause video when the page not in focus (true/false)
+-->
+        <div class="nk-page-background op-5" data-video="https://youtu.be/UkeDo1LhUqQ" data-video-loop="true" data-video-mute="true" data-video-volume="0" data-video-start-time="0" data-video-end-time="0" data-video-pause-on-page-leave="true" style="background-image: url('assets/images/page-background.jpg');"></div>
+        <!-- END: Page Background -->
+        <!--
+    START: Page Audio Background
+
+    Additional Attributes:
+        data-audio - URL to audio file
+        data-audio-volume - audio volume (0-100)
+        data-audio-autoplay - autoplay audio (true/false)
+        data-audio-loop - loop audio (true/false)
+        data-audio-pause-on-page-leave - pause video when the page not in focus (true/false)
+-->
+        <!--<div class="nk-page-background-audio d-none" data-audio="assets/mp3/purpleplanetmusic-desolation.mp3" data-audio-volume="100" data-audio-autoplay="true" data-audio-loop="true" data-audio-pause-on-page-leave="true"></div>-->
+        <!-- END: Page Background -->
+        <!-- START: Page Border -->
+        <div class="nk-page-border">
+            <div class="nk-page-border-t"></div>
+            <div class="nk-page-border-r"></div>
+            <div class="nk-page-border-b"></div>
+            <div class="nk-page-border-l"></div>
+        </div>
+        <!-- END: Page Border -->
+       
+
+        <div class="nk-main">
+            <!-- START: Header Title -->
+            <!--
+    Additional Classes:
+        .nk-header-title-sm
+        .nk-header-title-md
+        .nk-header-title-lg
+        .nk-header-title-xl
+        .nk-header-title-full
+        .nk-header-title-parallax
+        .nk-header-title-parallax-opacity
+        .nk-header-title-boxed
+-->
+            <div class="nk-header-title nk-header-title-lg nk-header-title-parallax nk-header-title-parallax-opacity">
+                <div class="bg-image">
+                    <img src="assets/images/image-1.jpg" alt="" class="jarallax-img">
+                </div>
+                <div class="nk-header-table">
+                    <div class="nk-header-table-cell">
+                        <div class="container">
+                            <div class="nk-header-text">
+								<img src="assets/images/favicon.png">
+								<hr>
+                                <h1 class="nk-title display-3 main-title">Gaming At Your Fingertips</h1>
+                                <hr>
+                                <a href="#">
+                                    <img src="assets/images/btn-download.png">
+                                </a>
+								<a href="#">
+                                    <img src="assets/images/btn-andriod.png">
+                                </a>
+								<a href="#">
+                                    <img src="assets/images/btn-apple.png">
+                                </a>
+                                <div class="nk-gap-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Header Title -->
+            <!-- START: Rev Slider -->
+            <div class="mnt-80">
+                <div id="rev_slider_50_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="photography-carousel48" style="padding:0px;">
+                    <div id="rev_slider_50_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.0.7">
+                        <ul>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-185" data-transition="slideoverhorizontal" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="assets/images/gallery-1-thumb.jpg" data-rotate="0" data-saveperformance="off">
+                                <!-- MAIN IMAGE -->
+                                <img src="assets/images/gallery-1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                            </li>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-192" data-transition="slideoververtical" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="assets/images/gallery-3-thumb.jpg" data-rotate="0" data-saveperformance="off">
+                                <!-- MAIN IMAGE -->
+                                <img src="assets/images/gallery-3.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                            </li>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-186" data-transition="slideoverhorizontal" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="assets/images/gallery-2-thumb.jpg" data-rotate="0" data-saveperformance="off">
+                                <!-- MAIN IMAGE -->
+                                <img src="assets/images/gallery-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                            </li>
+                            <!-- SLIDE  -->
+                        </ul>
+                        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Rev Slider -->
+            <!-- START: Features -->
+            <div class="container">
+                <div class="nk-gap-6"></div>
+                <div class="nk-gap-2"></div>
+                <div class="row vertical-gap lg-gap">
+                    <div class="col-md-4">
+                        <div class="nk-ibox">
+                            <div class="nk-ibox-icon nk-ibox-icon-circle">
+                                <img src="assets/images/icon-1.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat">
+                                <!-- <span class="ion-ios-game-controller-b"></span> -->
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <h2 class="nk-ibox-title">YOUR GAMING HUB</h2>A place for gamers to connect, play, and win awesome prizes
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="nk-ibox">
+                            <div class="nk-ibox-icon nk-ibox-icon-circle">
+                                <img src="assets/images/icon-2.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat">
+                                <!-- <span class="ion-fireball"></span> -->
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <h2 class="nk-ibox-title">TOURNAMENTS</h2>Sharpen your skills and test your metal with our Esports & Arcade tournaments.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="nk-ibox">
+                            <div class="nk-ibox-icon nk-ibox-icon-circle">
+                                <img src="assets/images/icon-3.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat">
+                                <!-- <span class="ion-ribbon-a"></span> -->
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <h2 class="nk-ibox-title">CASH PRIZES</h2>Win cash prizes and exclusive merchandise by signing up for an M+ membership
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-gap-2"></div>
+                <div class="nk-gap-6"></div>
+            </div>
+            <!-- END: Features -->
+            <!-- START: About -->
+            <div class="nk-box bg-dark-1">
+                <div class="container text-center">
+                    <div class="nk-gap-4"></div>
+                    <h2 class="nk-title h1">Your Gateway Into Competitive Gaming</h2>
+                    <div class="nk-gap-2"></div>
+						<p class="lead">Matchroom is a gaming hub that lets you connect with gamers and <span style="color:#FFC019">kickstart your esports journey by competing  for cash prizes and amazing merch!</span> Want to test your skills and compete in awesome esports tournaments? or climb the monthly arcade leaderboard? Matchroom lets you compete whenever, wherever you want.</p>
+					
+                    <div class="row no-gutters bg-dark-2">
+                        <div class="col-md-3">
+                            <div class="nk-box-2 nk-box-line">
+                                <!-- START: Counter -->
+                                <div class="nk-counter-3">
+                                    <div class="stat-title">X 30</div>
+                                    <h3 class="nk-counter-title h4">Tournament a week</h3>
+                                    <div class="nk-gap-1"></div>
+                                </div>
+                                <!-- END: Counter -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="nk-box-2 nk-box-line">
+                                <!-- START: Counter -->
+                                <div class="nk-counter-3">
+									<div class="stat-title"><h5 class="usd">USD</h5>100,000</div>
+                                    <h3 class="nk-counter-title h4">Total prize pool to date</h3>
+                                    <div class="nk-gap-1"></div>
+                                </div>
+                                <!-- END: Counter -->
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="nk-box-2 nk-box-line">
+                                <!-- START: Counter -->
+                                <div class="nk-counter-3">
+                                    <div class="stat-title">13</div>
+                                    <h3 class="nk-counter-title h4">ESPORTS Titles</h3>
+                                    <div class="nk-gap-1"></div>
+                                </div>
+                                <!-- END: Counter -->
+                            </div>
+                        </div>
+						<div class="col-md-3">
+                            <div class="nk-box-2 nk-box-line">
+                                <!-- START: Counter -->
+                                <div class="nk-counter-3">
+                                    <div class="stat-title">65 +</div>
+                                    <h3 class="nk-counter-title h4">Classis arcade games</h3>
+                                    <div class="nk-gap-1"></div>
+                                </div>
+                                <!-- END: Counter -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-gap-3"></div>
+                </div>
+            </div>
+            <!-- END: About -->
+			
+			<div class="nk-box">
+                    <div class="bg-image op-1 text-center">
+                        <img src="assets/images/landing-bg-2.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%">
+                    </div>
+
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <!-- TO REPLACE WITH FUNCTIONAL CAROUSEL /-Matt -->
+                            <div class="col-md-6">
+                                <div class="nk-gap-6"></div>
+                                <div class="nk-ibox"><img src="assets/images/banner-arcade.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%"></div>
+                            </div>
+							
+							<div class="col-md-6">
+								<div class="col-md-11">
+                                <div class="nk-gap-6"></div>
+                                <h2 class="nk-title h1">Arcade Challenge</h2>
+
+                                    <p class="lead">All the fun and prizes without the hassle of additional downloads. Play your all time favourite classic Arcade games through basic controls, a perfect fit for casual gamers who aren't all into the over the top story-driven & visual focus based games but offer the same attractive cash prize by climbing up the leaderboard!</p>                               
+                                    <button class="nk-btn nk-btn-lg link-effect-4 join-btn"><a href="#">Climb the Leaderboard</a></button>
+								</div>
+                            </div>
+                        </div>
+                    </div>                    
+                <div class="nk-gap-6"></div>
+            </div>
+
+			<div class="nk-box bg-dark-1">
+                    <div class="bg-image op-1 text-center">
+                        <img src="assets/images/landing-bg-2.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%">
+                    </div>
+
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+								<div class="col-md-11">
+                                <div class="nk-gap-6"></div>
+                                <h2 class="nk-title h1">ESPORTS Tournaments</h2>
+                                    <p class="lead">Flaunt your skills and compete for gold & glory! Let us at Matchroom do your heavy lifting for you by setting up the nitty gritty parts of hosting Esport tournaments while you just focus on registering, competing and winning those cash prizes!</p>                                
+                                    <button class="nk-btn nk-btn-lg link-effect-4 join-btn"><a href="#">Join Tournament</a></button>
+								</div>
+                            </div>
+							
+							<!-- TO REPLACE WITH FUNCTIONAL CAROUSEL /-Matt -->
+                            <div class="col-md-6">
+                                <div class="nk-gap-6"></div>
+                                <div class="nk-ibox"><img src="assets/images/banner-esports.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%"></div>
+                            </div>
+                        </div>
+                    </div>                    
+                <div class="nk-gap-6"></div>
+            </div>
+			
+			<div class="nk-box text-center">
+					<div class="container text-center">
+                        <div class="nk-gap-2"></div>
+                            <h2 class="nk-title h1">Upcoming Tournaments</h2>
+                        <div class="nk-gap-2"></div>
+						<div class="row text-center">
+							<div class="col-md-3">
+                                <div class="nk-ibox">
+                                        <a href="#"><img src="assets/images/T1.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%"></a>
+                                        <!-- <span class="ion-ios-game-controller-b"></span> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="nk-ibox">
+                                        <a href="#"><img src="assets/images/T2.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%"></a>
+                                        <!-- <span class="ion-ios-game-controller-b"></span> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="nk-ibox">
+                                        <a href="#"><img src="assets/images/T3.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%"></a>
+                                        <!-- <span class="ion-ios-game-controller-b"></span> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="nk-ibox">
+                                        <a href="#"><img src="assets/images/T4.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%"></a>
+                                        <!-- <span class="ion-ios-game-controller-b"></span> -->
+                                </div>
+                            </div>							
+                        </div><!-- row text-center -->
+						<div class="nk-gap-6">
+                    </div><!-- container text-center -->
+            </div>
+			
+			<div class="nk-box bg-dark-1">
+                <div class="bg-image op-1 text-center">
+                    <img src="assets/images/landing-bg-3.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%">
+                </div>
+                <div class="container">
+					<div class="nk-gap-4"></div>
+                        <h2 class="nk-title text-center h1 mall-title">Made By Gamers For Gamers</h2>
+						<p class="lead">Our store offers a variety of premium and affordable tech products of different specs for every gamer out there. Designed for gamer, the products you use are an essential tool for you to start your Esports journey. Especially when our products were made by gamers themselves!</p>                     
+					<div class="nk-gap-2"></div>						
+						<div class="row text-center">
+							<div class="col-md-3">
+                                <div class="nk-ibox">
+                                        <img src="assets/images/mall001.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%">
+                                        <!-- <span class="ion-ios-game-controller-b"></span> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="nk-ibox">
+                                        <img src="assets/images/mall002.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%">
+                                        <!-- <span class="ion-ios-game-controller-b"></span> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="nk-ibox">
+                                        <img src="assets/images/mall003.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%">
+                                        <!-- <span class="ion-ios-game-controller-b"></span> -->
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="nk-ibox">
+                                        <img src="assets/images/mall004.png" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" width="100%">
+                                        <!-- <span class="ion-ios-game-controller-b"></span> -->
+                                </div>								
+							</div>							
+                        </div><!-- row text-center -->
+						<div class="nk-gap-2"></div>
+						<button class="nk-btn nk-btn-lg link-effect-4 join-btn"><a href="#">ENTER MALL</a></button>                   
+					<div class="nk-gap-3"></div>					
+				</div><!-- container -->  			
+			</div><!-- nk-box bg-dark-1 --> 
+			
+			<div class="nk-box bg-dark-1">                			
+					<div class="container">
+						<div class="nk-gap-4"></div>					
+						<div class="row">							
+							<div class="col-md-8">
+								<div class="nk-ibox">									
+									<div class="nk-counter-3">
+										<h2 class="nk-title h1 signup-title">We Match The Community</h2>
+										<p class="signup-text">We have tailored our platform to cater to you - the player's - needs as our coming features reflect what the community wants by adapting to the ever evolving tech industry of Esports Gaming.</p>
+									</div>									
+								</div>
+							</div>
+							<div class="col-md-4 signup-btn">
+								<div class="nk-ibox">
+									<div class="nk-counter-3">
+										<button class="nk-btn nk-btn-lg link-effect-4 join-btn"><a href="#">SIGNUP</a></button> 
+										<button class="nk-btn nk-btn-lg link-effect-4 join-btn"><a href="#">LOGIN</a></button> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nk-gap-4"></div>
+					</div>    
+				</div>
+			</div>
+			
+			<!-- START: Video -->
+            <div class="container">
+                <div class="nk-gap-6"></div>
+                <div class="nk-gap-2"></div>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <div class="nk-plain-video" data-video="https://www.youtube.com/watch?v=jz0qMW7on7A" data-video-thumb="assets/images/video-6-thumb.jpg"></div>
+                    </div>
+                </div>
+                <div class="nk-gap-2"></div>
+                <div class="nk-gap-6"></div>
+            </div>
+            <!-- END: Video -->
+      
+   			<div class="nk-box bg-dark-1">
+				<div class="container text-center">
+					<div class="nk-gap-4"></div>
+
+								<ul class="footer">
+								  <li>
+									<a href="#" class="mr-logo">
+									  <img src="assets/images/mr-logo.png">
+									</a>
+								  </li>
+								  <li>
+									<a href="#">
+									  <i class="fab fa-facebook"></i>
+									</a>
+								  </li>
+								  <li>
+									<a href="#">
+									  <i class="fab fa-instagram"></i>
+									</a>
+									</li>
+								  <li>
+									<a href="#">
+									  <i class="fab fa-youtube"></i>
+									</a>						
+								  </li>
+								  <li>
+									<a href="#">
+									  <i class="fab fa-discord"></i>
+									</a> 
+								  </li>
+								</ul>
+
+						<div class="nk-gap-6"></div>
+						<p class="footer-text">2018 @ Matchroom.net. All Rights Reserved</p>
+					</div>
+					<div class="nk-gap-2"></div>
+			</div>
+		</div><!-- nk-main -->
+            
+			
+        <div class="nk-side-buttons nk-side-buttons-visible">
+            <ul>
+                <li class="nk-scroll-top">
+                    <span class="nk-btn nk-btn-lg nk-btn-icon">
+                        <span class="icon ion-ios-arrow-up"></span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!-- END: Side Buttons -->
+
+
+        <!-- START: Scripts -->
+        <!-- Object Fit Polyfill -->
+        <script src="assets/vendor/object-fit-images/dist/ofi.min.js"></script>
+        <!-- GSAP -->
+        <script src="assets/vendor/gsap/dist/gsap.min.js"></script>
+        <script src="assets/vendor/gsap/dist/ScrollToPlugin.min.js"></script>
+        <!-- Popper -->
+        <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Sticky Kit -->
+        <script src="assets/vendor/sticky-kit/dist/sticky-kit.min.js"></script>
+        <!-- Jarallax -->
+        <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+        <script src="assets/vendor/jarallax/dist/jarallax-video.min.js"></script>
+        <!-- imagesLoaded -->
+        <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <!-- Flickity -->
+        <script src="assets/vendor/flickity/dist/flickity.pkgd.min.js"></script>
+        <!-- Isotope -->
+        <script src="assets/vendor/isotope-layout/dist/isotope.pkgd.min.js"></script>
+        <!-- Photoswipe -->
+        <script src="assets/vendor/photoswipe/dist/photoswipe.min.js"></script>
+        <script src="assets/vendor/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+        <!-- Typed.js -->
+        <script src="assets/vendor/typed.js/lib/typed.min.js"></script>
+        <!-- Jquery Validation -->
+        <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <!-- Jquery Countdown + Moment -->
+        <script src="assets/vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
+        <script src="assets/vendor/moment/min/moment.min.js"></script>
+        <script src="assets/vendor/moment-timezone/builds/moment-timezone-with-data.min.js"></script>
+        <!-- Hammer.js -->
+        <script src="assets/vendor/hammerjs/hammer.min.js"></script>
+        <!-- NanoSroller -->
+        <script src="assets/vendor/nanoscroller/bin/javascripts/jquery.nanoscroller.js"></script>
+        <!-- SoundManager2 -->
+        <script src="assets/vendor/soundmanager2/script/soundmanager2-nodebug-jsmin.js"></script>
+        <!-- DateTimePicker -->
+        <script src="assets/vendor/jquery-datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+        <!-- Revolution Slider -->
+        <script src="assets/vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="assets/vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="assets/vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="assets/vendor/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="assets/vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <!-- Keymaster -->
+        <script src="assets/vendor/keymaster/keymaster.js"></script>
+        <!-- Summernote -->
+        <script src="assets/vendor/summernote/dist/summernote-bs4.min.js"></script>
+        <!-- GODLIKE -->
+        <script src="assets/js/godlike.min.js"></script>
+        <script src="assets/js/godlike-init.js"></script>
+        <!-- END: Scripts -->
+        <script type="text/javascript">
+            var tpj = jQuery;
+            var revapi50;
+            tpj(document).ready(function()
+            {
+                if (tpj("#rev_slider_50_1").revolution == undefined)
+                {
+                    revslider_showDoubleJqueryError("#rev_slider_50_1");
+                }
+                else
+                {
+                    revapi50 = tpj("#rev_slider_50_1").show().revolution(
+                    {
+                        sliderType: "carousel",
+                        jsFileLocation: "assets/vendor/revolution/js/",
+                        sliderLayout: "auto",
+                        dottedOverlay: "none",
+                        delay: 9000,
+                        navigation:
+                        {
+                            keyboardNavigation: "off",
+                            keyboard_direction: "horizontal",
+                            onHoverStop: "off",
+                        },
+                        carousel:
+                        {
+                            maxRotation: 8,
+                            vary_rotation: "off",
+                            minScale: 20,
+                            vary_scale: "off",
+                            horizontal_align: "center",
+                            vertical_align: "center",
+                            fadeout: "off",
+                            vary_fade: "off",
+                            maxVisibleItems: 3,
+                            infinity: "on",
+                            space: -90,
+                            stretch: "off"
+                        },
+                        responsiveLevels: [1240, 1024, 778, 480],
+                        gridwidth: [800, 600, 400, 320],
+                        gridheight: [600, 400, 320, 280],
+                        lazyType: "none",
+                        shadow: 0,
+                        spinner: "off",
+                        stopLoop: "on",
+                        stopAfterLoops: 0,
+                        stopAtSlide: 0,
+                        shuffle: "off",
+                        autoHeight: "off",
+                        fullScreenAlignForce: "off",
+                        fullScreenOffsetContainer: "",
+                        fullScreenOffset: "",
+                        disableProgressBar: "on",
+                        hideThumbsOnMobile: "off",
+                        hideSliderAtLimit: 0,
+                        hideCaptionAtLimit: 0,
+                        hideAllCaptionAtLilmit: 0,
+                        debugMode: false,
+                        fallbacks:
+                        {
+                            simplifyAll: "off",
+                            nextSlideOnWindowFocus: "off",
+                            disableFocusListener: false,
+                        }
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

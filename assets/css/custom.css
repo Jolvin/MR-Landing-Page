@@ -1,0 +1,126 @@
+/* PLACE YOU CUSTOM STYLES IN THIS FILE */
+@font-face {
+	font-family: "montserrat";
+	src: url("../assets/fonts/Montserrat-Medium.otf");
+	font-family: "OpenSans";
+	src: url("../assets/fonts/OpenSans-Light.ttf");
+}
+
+.nk-main h1.main-title {
+	font-size: 2.7rem;
+	font-weight: 500;
+}
+
+.stat-title {
+	font-family: "montserrat";
+    font-weight: 600;
+	font-size: 3rem;
+	color: #ffc019;
+}
+
+.nk-counter-3 .stat-title h5.usd {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	color: #ffffff;
+}
+
+button.join-btn {
+	background-color: #000000;
+	border: 1px solid #ffc019;
+	
+}
+
+.container p.lead {
+	font-family: "montserrat";
+    font-weight: 0;
+	font-size: 1.1rem;
+}
+
+h2.mall-title {
+	font-family: "montserrat";
+	color: #ffc019;
+}
+
+h2.signup-title {
+	font-family: "montserrat";
+    font-weight: 600;
+	text-align: left;
+	font-size: 1.5rem;
+	color: #ffc019;
+}
+
+p.signup-text {
+	font-family: "montserrat";
+    font-weight: 0;
+	text-align: left;
+	font-size: 1rem;
+}
+
+.signup-btn {
+	margin: auto;
+}
+
+p.footer-text {
+	font-family: "montserrat";
+	font-size: 1rem;
+	color: #ffc019;	
+}
+
+ul.footer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul.footer li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+ul.footer li a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #1c1c1c;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+
+ul.footer li a.mr-logo {
+  line-height: 57px;
+}
+
+ul.footer li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffc019;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+ul.footer li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+ul.footer li a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffc019;
+  text-shadow: 0 0 5px #ffc019;
+}
